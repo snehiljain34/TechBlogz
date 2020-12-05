@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+.Domain{
+  text-align: center;
+  align-items: center;
+}
+.domains{
+  width: 40%;
+  position: absolute;
+  background-color: #1c2ffb;
+  padding: 1.2rem 1rem 1rem 1rem;
+}
+.domains div{
+  float: left;
+}
+.domains li{
+    list-style-type: square;
+    color: yellow;
+    font-family: 'Fira Code', monospace;
+
+}
+
+
+.advertisement{
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #808080;
+}
+.advertisement p{
+  font-family: 'Fira Code', monospace;
+  margin-bottom: 0px;
+  color: yellow;
+  font-weight: bold;
+}
+.part_of_community{
+  background-color: #3B49DF;
+  padding: 2rem;
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
+  list-style: none;
+}
+.part_of_community ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+.part_of_community0{
+  font-family: "Bangers", cursive;
+  font-size: 36px;
+  line-height: 2rem;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.part_of_community1{
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.TechStories{
+  padding: 1.2rem;
+  text-align: center;
+}
+.techie-news{
+  padding-top: 1rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.2rem;
+
+}
+.story {
+  float: left;
+  width:100px;
+  height:100px;
+  overflow:hidden;
+}
+.story img {
+  width:70px;
+  border-radius:50%;
+  position:absolute;
+
+}
+.story svg {
+  fill:none;
+  stroke:#8a3ab8;
+  stroke-width:3px;
+  stroke-dasharray:1;
+  stroke-dashoffset:0;
+  stroke-linecap:round;
+  animation:loading 4500ms ease-in-out infinite alternate;
+}
+@keyframes loading {
+  100% {
+    stroke:#cd476b;
+    stroke-dasharray:10;
+    transform:rotate(200deg);
+  }
+}
+#div {
+            display: none;
+            background: green;
+            height: 100px;
+            width: 200px;
+            margin: 0 auto;
+            color: white;
+    }
+.shadow-sm {
+  background-color:  #F5F6FF!important;
+}
+
+
+.Programming{
+  background-color: #212428;
+  padding-bottom: 20px;
+}
+#pricing{
+  padding-top:0px!important;
+  padding-left:0px!important;
+  padding-right:0px!important;
+  text-align: center!important;
+}
+.feed{
+  background-color: #808080;
+  height: 2.5rem;
+  padding: 0.3rem;
+}
+.feed p{
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 2rem;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.vlog-heading{
+  padding-top: 1rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.2rem;
+}
+.row{
+  text-align: center!important;
+  padding-left: 1rem;
+}
+
+#pricing{
+  padding: 20px;
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url("bg.jpg");
+  background-position:  top;
+  font-family: 'Quicksand', sans-serif;
+  background-color: yellow;
+
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+}
+.box{
+  width: 300px;
+  height: 500px;
+  background: white;
+  color: black;
+  margin: 0 20px;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+.box div{
+  margin: 5px 0;
+}
+.box div input{
+  width: 220px;
+  height: 25px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+.box button{
+  width: 220px;
+  height: 30px;
+  margin-top: 5px;
+  background: none;
+  border: none;
+  outline: none;
+  background: #4f58ff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.box h1{
+  margin: 60px 0 20px 0;
+}
+.box .icon{
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  border-radius: 0 0 50% 50%;
+  background: #4f58ff;
+  box-shadow: 0px 0px 20px rgb(144,144,144);
+  align-items: flex-end;
+}
+.box .icon i{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.category select {
+  background-color: #e0e3e5;
+  font-family: 'Quicksand';
+}
+
+.select-selected:after {
+  font-family: 'Quicksand';
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+

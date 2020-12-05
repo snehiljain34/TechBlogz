@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+   <head >
+      <title>TechBlog</title>
+      <meta charset="utf-8">
+      <link rel="shortcut icon" href="assets/Blog.ico" type="image/x-icon">
+
+      <!-- Bootstrap Link -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!-- link for fontAwesome -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600;700&amp;display=swap">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="styles/login-form.css">
+      
+   </head>
+   <body>
+      <div id="__nuxt">
+         <!---->
+         <div id="__layout">
+            <div>
+               <div class="main">
+                  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+                     <a href="#" class="navbar-brandy"><img src="assets/TechBlog.svg" alt="TechBlog" width="120px"></a>
+                     <nav class="my-2 my-md-0 mr-md-4 ml-auto">
+                       <a href="/TechBlogs/" class="p-2 text-dark">Read</a>
+                       <a href="/TechBlogs/" class="p-2 text-dark">Write</a>
+                       <a href="/aboutus" class="p-2 text-dark">About us</a>
+
+                       <a href class="p-2 text-dark"><a href="" style="color:black;"><%= username %> LoggedIn ✅</a></a>
+                     </nav>
+                     <form action="/logout?_method=DELETE" method="POST">
+                       <button class="btn btn-primary-soft" type="submit">Log Out</button>
+                     </form>
+                  </div>
+                  <div class="page-body-wrapper">
+                    <div class="advertisement">
+                        <p>Domain | Advertisment | Links</p>
+                    </div>
+                    <div class="main center">
+                      <form action="/TechBlogs/new/<%= username %>" method="POST">
+                      <div class="box center">
+                        <div class="icon center">
+                          <i class="far fa-user fa-2x"></i>
+                        </div>
+
+                        <div>
+                            <p>Title</p>
+                            <input type="text" name="title" placeholder="Enter your title here..." >
+                        </div>
+                        <div>
+                            <p>content</p>
+                            <input type="text" name="content" placeholder="Enter your content here..." >
+                        </div>
+                        <div>
+                            <p>Img URL</p>
+                            <input type="url" name="IMGurl" placeholder="Enter your img URL here..." >
+                        </div>
+                        <div class="category">
+                          <label for="cars">Choose category:</label>
+                          <select id="cars" name="category">
+                            <option value="coding"          >coding</option>
+                            <option value="machinelearning" >machinelearning</option>
+                            <option value="datascience"     >datascience</option>
+                            <option value="">soon more </option>
+                          </select>
+                        </div>
+                        
+                        <button class="btn btn-primary" style="padding-bottom: 0px; padding-top: 0px;" type="submit">Submit</button>
+                      </div>
+                    </form>
+
+                    </div>
+
+
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $("#story1").click(function(){
+          $("#news1").show();
+        });
+        $("#story2").click(function(){
+          $("#news2").show();
+        });
+        $("#story3").click(function(){
+          $("#news3").show();
+        });
+        $("#story4").click(function(){
+          $("#news4").show();
+        });
+
+      });
+      </script>
+   </body>
+</html>

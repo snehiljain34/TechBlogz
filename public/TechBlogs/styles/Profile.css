@@ -1,0 +1,46 @@
+body{
+    background-image: url("assets/bg.jpg");
+}
+
+.blogs{
+    width: 71%;
+}
+.profile{
+    background-color: #3B49DF;
+    float: right;
+    width: 22rem;
+    height: 33.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+#pricing{
+    padding-bottom: 0px;
+}
+
+.last{
+    text-align: center;
+    color: #000;
+}
+.last p{
+    margin-bottom: 0px;
+}
+.profile p{
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: #fff;
+}
+.profile img{
+    border-radius: 50%;
+    height: 9rem;
+    width: 9rem;
+}
+
+.bio{
+    padding: 2rem;
+}
+.bio p{
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
