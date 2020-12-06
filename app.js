@@ -30,6 +30,7 @@ initializePassport(
 
 const users = [];
 const Posts=[];
+const blog = [];
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }))
@@ -201,14 +202,50 @@ app.get("/TechBlogs/new/:username", function(req, res){
 app.post("/TechBlogs/new/:username", function(req, res){
   const username = _.lowerCase(req.params.username);
 
-  var post = {
-    username  : username,
-    title     : req.body.title,
-    content   : req.body.content,
-    IMGurl    : req.body.IMGurl,
-    category  : req.body.category
+  var flag = 0;
+
+  Posts.forEach(function(post){
+    const StoredUsername = post.username;
+
+    if (username == StoredUsername){
+
+        newBlogs = post.Blogs;
+        var blog = {
+          title     : req.body.title,
+          content   : req.body.content,
+          IMGurl    : req.body.IMGurl,
+          category  : req.body.category
+        } 
+        newBlogs.push(blog);
+        flag = 1;
+        break;
+    }
+  })
+  
+  if (flag == 0){
+    var post = {
+      username : username,
+      Blogs: []
+    }
+    var blog={
+      title     : req.body.title,
+      content   : req.body.content,
+      IMGurl    : req.body.IMGurl,
+      category  : req.body.category
+    }
+    var newBlogs = post.Blogs;
+    newBlogs.push(blog);
+    console.log(newBlogs);
+    
+
+    Posts.push(post);
   }
-  Posts.push(post);
+  
+  var news = Posts.post;
+  var js = news.Blogs;
+  console.log(js);
+
+
   console.log(Posts);
   res.redirect("/TechBlogs");
 })
