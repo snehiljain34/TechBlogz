@@ -1,0 +1,79 @@
+.mainwrp{
+  margin-top: 0px!important;
+
+}
+
+.signup-left {
+
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 15px
+	font-weight: 400;
+	text-align: left;
+	background-color: #fff;
+	display: flex;
+  float: left;
+  margin-left: 120px;
+}
+
+h1 {
+	/* Font & Text */
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 50px;
+	font-weight: 700;
+	text-align: left;
+	color: #6c7293;
+}
+div #login {
+	/* Font & Text */
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 14.992px;
+	font-weight: 400;
+  background-color: #fff;
+	color: rgb(108, 114, 147);
+}
+input {
+	/* Font & Text */
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #f7f7f9;
+	color: #808080;
+
+	padding: 16px 11.2px;
+  margin-bottom: 20px;
+  width: 360px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+textarea {
+	/* Font & Text */
+	font-family: "Baloo Thambi 2", cursive;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #f7f7f9;
+	color: #808080;
+  padding: 16px 11.2px;
+  margin-bottom: 20px;
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.signupimg{
+  width: 480px;;
+  height: 20rem;
+}
+.navbra{
+	width: 80%;
+	margin: 0 auto 1rem;
+  background-color: #fff;
+}
+@media (max-width: 510px;){
+  .mainwrp{
+    margin-top: 0px!important;
+    margin-left: 20px;
+  }
+}

@@ -13,7 +13,6 @@ a.text-dark:hover {
 	color: #000!important
 }
 
-
 .advertisement:hover + .Domain {
   display: block;
 }
@@ -22,15 +21,18 @@ a.text-dark:hover {
 }
 .Domain{
  display: none;
+ left: 2rem;
+ background-color: #20c997;;
+ padding: 1rem 1rem 1rem 0rem;
+ z-index: 1;
+ position: absolute;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ box-shadow: 5px 10px 5px  #0379ee;
 }
-.domains{
-  width: 40%;
-  position: absolute;
-  background-color: #1c2ffb;
-  padding: 1.2rem 1rem 1rem 1rem;
-}
+
 .readtags{
-  color: #000;
+  color: #fff;
   font-family: 'Fira Code', monospace;
   font-weight: 500;
 
@@ -47,6 +49,8 @@ a.text-dark:hover {
   text-align: center;
   padding: 0.5rem;
   background-color: #808080;
+  background-image: url("bg.jpg");
+  background-position: center;
 }
 .advertisement p{
   font-family: 'Fira Code', monospace;
@@ -64,6 +68,7 @@ a.text-dark:hover {
   font-family: 'Bangers', cursive;
   font-size: 40px;
   list-style: none;
+  box-shadow: 5px 10px 5px  #888888;
 }
 .part_of_community ul{
   list-style-type: none;

@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
 html {
   scroll-behavior: smooth;
-  overflow-x: auto!important;
 }
 a:hover + div { 
   display: block; 
   color: green; 
   font-size: 25px; 
 }
+.text-dark,
+a.text-dark:focus,
+a.text-dark:hover {
+	color: #000!important
+}
+
+
 .advertisement:hover + .Domain {
   display: block;
 }
@@ -16,18 +22,18 @@ a:hover + div {
 }
 .Domain{
  display: none;
- left: 2rem;
- background-color: #20c997;
- padding: 1rem 1rem 1rem 0rem;
- z-index: 1;
- position: absolute;
- border-bottom-left-radius: 20px;
- border-bottom-right-radius: 20px;
- box-shadow: 5px 10px 5px  #0379ee;
+ background-color: #3B49DF;
+ background-color: #1c2ffb;
+ padding: 1.2rem 1rem 1rem 1rem;
 }
-
+.domains{
+  width: 40%;
+  position: absolute;
+  background-color: #1c2ffb;
+  padding: 1.2rem 1rem 1rem 1rem;
+}
 .readtags{
-  color: #fff!important;
+  color: #fff;
   font-family: 'Fira Code', monospace;
   font-weight: 500;
 
@@ -53,6 +59,7 @@ a:hover + div {
   color: yellow;
   font-weight: bold;
 }
+
 #home{
   background-image: url('net.png');
 }
@@ -141,15 +148,14 @@ a:hover + div {
 
 .Programming{
  background-repeat: no-repeat;
-  background-color: #212428;
-  padding-bottom: 20px;
-  padding-left: 20px;
+ background-color: #212428;
+ padding-bottom: 20px;
+ padding-left: 20px;
 }
 #pricing{
   padding-top:0px!important;
   padding-left:0px!important;
   padding-right:0px!important;
-  padding-bottom: 0px!important;
   text-align: center!important;
 }
 .feed{
@@ -175,12 +181,52 @@ a:hover + div {
 }
 
 #pricing{
-  padding: 20px;
+
   text-align: center;
 }
 
-@media (max-width: 720px){
-  .card{
-    width: 18rem;
-  }
+.footer {
+	background: #3B49DF;
+	left: 0;
+	bottom: 0;
+
+	width: 100%!important;
+	text-align: center!important
 }
+
+.newletterh1 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.5rem;
+  color:#fff;
+}
+
+.footerchild {
+	width: 50%;
+	display: flex;
+	justify-content: centre;
+	align-items: centre;
+	flex-direction: column
+}
+.footerchild h3{
+  color: #fff;
+  font-family: 'Bangers', cursive;
+}
+.footerchild ul {
+	list-style: none
+}
+.footerchild p{
+  color: #000;
+}
+
+.footerchild ul li {
+	color: #fff;
+	padding-bottom: .5rem
+}
+.footerchild ul li a {
+	color: #000;
+}
+
+.copyright{
+  color: #fff;
+}
+

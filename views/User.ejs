@@ -30,11 +30,10 @@
                  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
                     <a href="#" class="navbar-brandy"><img src="assets/TechBlog.svg" alt="TechBlog" width="120px"></a>
                     <nav class="my-2 my-md-0 mr-md-4 ml-auto">
-                      <a href="#programming" class="p-2 text-dark showtags">Read</a>
-                      <a href="/TechBlogs/new/<%=username%>" class="p-2 text-dark">Write</a>
-                      <a href="" class="p-2 text-dark">About us</a>
-
-                      <a href="/TechBlogs/<%=username%>" class="p-2 text-dark"><%= username %></a>
+                      <a href="/TechBlogs"                   class="p-2 text-dark showtags">Read</a>
+                      <a href="/TechBlogs/new/<%=username%>" class="p-2 text-dark"         >Write</a>
+                      <a href="/us/aboutus"                  class="p-2 text-dark"         >About us</a>
+                      <a href="/TechBlogs/<%=username%>"     class="p-2 text-dark"         ><%= username %></a>
                     </nav>
                     <form action="/logout?_method=DELETE" method="POST">
                       <button class="btn btn-primary-soft" type="submit">Log Out</button>
@@ -69,23 +68,16 @@
                             <div class="row">
                                 
                                 <%  Posts.forEach(function(post){ %>
-                                    <%  const StoredUsername = post.username;  %>
-                                    <%  const UserName == '<%=username%>' %>
-                                    <%  if (Username === StoredUsername ){ %>
                                             <div class="pricing-column col-lg-4 col-md-6">
                                                 <div class="card" style="width: 14rem;">
                                                 <img class="card-img-top" src="<%=post.IMGurl%>" alt="Card image cap">
                                                 <div class="card-body">
                                                 <h5 class="card-title"><%= post.title%></h5>
                                                 <p class="card-text"><%=post.content.slice(0,50) + "..." %></p>
-                                                <a href="/TechBlogs/<%=username%>/<%=post.title%>" class="btn btn-primary">Read Post</a>
+                                                <a href="/<%=post.title%>" class="btn btn-primary">Read Post</a>
                                                 </div>
                                                 </div>
                                             </div>
-                                    
-                                    <%    }else{ %>
-
-                                    <%    } %>
                                     
 
                               <% }) %>
